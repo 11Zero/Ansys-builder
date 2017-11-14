@@ -4,9 +4,10 @@
         xmlns:core="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Ansys_builder"
         xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
-        Title="ANSYS等截面梁桥建模助手" Height="800" Width="1000" Loaded="Window_Loaded" xmlns:my="clr-namespace:Ansys_builder.CAD">
+        Title="ANSYS等截面梁桥建模助手" Height="800" Width="1000" Loaded="Window_Loaded" 
+        xmlns:CAD="clr-namespace:CADCtrl;assembly=CADCtrl">
     <Grid>
-        <my:CADCtrl HorizontalAlignment="Left" x:Name="CADctrl_frame" VerticalAlignment="Top" Height="324" Width="334" Margin="644,0,0,0" />
+        <CAD:CADView HorizontalAlignment="Left" x:Name="CADctrl_frame" VerticalAlignment="Top" Height="466" Width="663" Margin="315,0,0,0" />
         <Label Content="桥长" Height="28" HorizontalAlignment="Left" Margin="52,25,0,0" Name="label_bri_len" VerticalAlignment="Top" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="92,30,0,0" Name="textBox_bri_len" VerticalAlignment="Top" Width="60" />
         <Label Content="m" Height="28" HorizontalAlignment="Left" Margin="163,25,0,0" Name="label_bri_len_unit" VerticalAlignment="Top" />

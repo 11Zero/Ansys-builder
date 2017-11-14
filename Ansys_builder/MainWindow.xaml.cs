@@ -18,7 +18,8 @@ using System.Collections.ObjectModel;
 using System.Data;
 using System.IO;
 using Microsoft.Win32;
-using Ansys_builder.CAD;
+//using Ansys_builder.CAD;
+using CADCtrl;
 
 namespace Ansys_builder
 {
