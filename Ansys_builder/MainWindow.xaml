@@ -4,24 +4,114 @@
         xmlns:core="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Ansys_builder"
         xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
-        Title="ANSYS等截面梁桥建模助手" Height="800" Width="1000" Loaded="Window_Loaded" 
-        xmlns:CAD="clr-namespace:CADCtrl;assembly=CADCtrl">
+        Title="ANSYS等截面梁桥建模助手" Height="506" Width="518.5" Loaded="Window_Loaded" 
+        xmlns:CAD="clr-namespace:CADCtrl;assembly=CADCtrl" PreviewKeyDown="Window_PreviewKeyDown"
+        PreviewKeyUp="Window_PreviewKeyUp">
     <Grid>
-        <CAD:CADView HorizontalAlignment="Left" x:Name="CADctrl_frame" VerticalAlignment="Top" Height="466" Width="663" Margin="315,0,0,0" />
-        <Label Content="桥长" Height="28" HorizontalAlignment="Left" Margin="52,25,0,0" Name="label_bri_len" VerticalAlignment="Top" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="92,30,0,0" Name="textBox_bri_len" VerticalAlignment="Top" Width="60" />
-        <Label Content="m" Height="28" HorizontalAlignment="Left" Margin="163,25,0,0" Name="label_bri_len_unit" VerticalAlignment="Top" />
-        <Label Content="墩高" Height="28" HorizontalAlignment="Left" Margin="206,25,0,0" Name="label_base_height" VerticalAlignment="Top" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="246,30,0,0" Name="textBox_base_height_unit" VerticalAlignment="Top" Width="60" />
-        <Label Content="m" Height="28" HorizontalAlignment="Left" Margin="316,25,0,0" Name="label_base_height_unit" VerticalAlignment="Top" />
-        <Label Content="分跨" Height="28" HorizontalAlignment="Left" Margin="52,59,0,0" Name="label_span_sep" VerticalAlignment="Top" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="92,64,0,0" Name="textBox_span_sep" VerticalAlignment="Top" Width="214" />
-        <Label Content="m" Height="28" HorizontalAlignment="Left" Margin="315,60,0,0" Name="label_span_unit" VerticalAlignment="Top" />
-        <Label Content="桥墩分布形式" Height="28" HorizontalAlignment="Left" Margin="52,93,0,0" Name="label_base_style" VerticalAlignment="Top" />
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="148,95,0,0" Name="comboBox_base_style" VerticalAlignment="Top" Width="92">
+        <CAD:CADView HorizontalAlignment="Left" x:Name="CADctrl_frame" VerticalAlignment="Top" Height="282" Width="506" Margin="4,3,0,0" />
+        <Label Content="分跨" Height="28" HorizontalAlignment="Left" Margin="22,310,0,0" Name="label_span_sep" VerticalAlignment="Top" />
+        <Label Content="桥墩分布形式" Height="28" HorizontalAlignment="Left" Margin="22,347,0,0" Name="label_base_style" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="108,349,0,0" Name="comboBox_base_style" VerticalAlignment="Top" Width="78" SelectionChanged="comboBox_base_style_SelectionChanged">
             <ComboBoxItem Content="单墩" DataContext="{Binding}" />
             <ComboBoxItem Content="双墩顺桥" />
             <ComboBoxItem Content="双墩横桥" />
         </ComboBox>
+        <Button Content="定义箱梁截面" Height="36" HorizontalAlignment="Left" Margin="362,382,0,0" Name="btn_section" VerticalAlignment="Top" Width="124" Click="btn_section_Click" />
+        <Label Content="双墩间距" Height="28" HorizontalAlignment="Left" Margin="191,349,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="254,349,0,0" Name="text_base_dist" VerticalAlignment="Top" Width="44" IsEnabled="True" />
+        <GroupBox Header="桥墩尺寸" Height="88" HorizontalAlignment="Left" Margin="22,377,0,0" Name="groupBox1" VerticalAlignment="Top" Width="276">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="36*" />
+                    <ColumnDefinition Width="152*" />
+                </Grid.ColumnDefinitions>
+                <CheckBox Content="矩形墩" Height="19" HorizontalAlignment="Left" Margin="7,12,0,0" Name="checkBox_rect_base" VerticalAlignment="Top" Width="64" Grid.ColumnSpan="2" Checked="checkBox_rect_base_Checked" />
+                <CheckBox Content="圆形墩" Height="18" HorizontalAlignment="Left" Margin="7,39,0,0" Name="checkBox_cir_base" VerticalAlignment="Top" Width="64" Grid.ColumnSpan="2" Checked="checkBox_cir_base_Checked" />
+                <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  Name="text_rect_base_size" Margin="34,6,6,0" Grid.Column="1" Height="26" VerticalAlignment="Top">
+                    <TextBox.Resources>
+                        <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                            <VisualBrush.Visual>
+                                <TextBlock FontStyle="Italic" Text="顺桥长 , 横桥长 , 高" />
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </TextBox.Resources>
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="{x:Null}">
+                                    <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                                </Trigger>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+                <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1" Name ="text_cir_base_size" Margin="34,36,0,0" HorizontalAlignment="Left" Width="173" Grid.Column="1" Height="26" VerticalAlignment="Top">
+                    <TextBox.Resources>
+                        <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                            <VisualBrush.Visual>
+                                <TextBlock FontStyle="Italic" Text="半径 , 高" />
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </TextBox.Resources>
+                    <TextBox.Style>
+                        <Style TargetType="{x:Type TextBox}">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="{x:Null}">
+                                    <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                                </Trigger>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+            </Grid>
+        </GroupBox>
+        <Label Content="桥墩材料" Height="28" HorizontalAlignment="Left" Margin="362,305,0,0" x:Name="label_base_material" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="425,307,0,0" x:Name="comboBox_base_material" VerticalAlignment="Top" Width="61" SelectionChanged="comboBox_base_material_SelectionChanged">
+            <ComboBoxItem Content="C20" DataContext="{Binding}" />
+            <ComboBoxItem Content="C25" />
+            <ComboBoxItem Content="C30" />
+            <ComboBoxItem Content="C35" />
+            <ComboBoxItem Content="C40" />
+            <ComboBoxItem Content="C45" />
+            <ComboBoxItem Content="C50" />
+        </ComboBox>
+        <Label Content="桥梁材料" Height="28" HorizontalAlignment="Left" Margin="362,340,0,0" x:Name="label_beam_material" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="425,342,0,0" x:Name="comboBox_beam_material" VerticalAlignment="Top" Width="61" SelectionChanged="comboBox_beam_material_SelectionChanged">
+            <ComboBoxItem Content="C20" DataContext="{Binding}" />
+            <ComboBoxItem Content="C25" />
+            <ComboBoxItem Content="C30" />
+            <ComboBoxItem Content="C35" />
+            <ComboBoxItem Content="C40" />
+            <ComboBoxItem Content="C45" />
+            <ComboBoxItem Content="C50" />
+        </ComboBox>
+        <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  x:Name="textBox_span_sep" Margin="68,0,0,138" HorizontalAlignment="Left" Width="230" Height="28" VerticalAlignment="Bottom">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Italic" Text="第一跨 , 第二跨 , 第三跨 , ..." />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Button Content="输出模型文件" Height="36" HorizontalAlignment="Left" Margin="362,427,0,0" x:Name="btn_save" VerticalAlignment="Top" Width="124" Click="btn_save_Click" />
     </Grid>
 </Window>
