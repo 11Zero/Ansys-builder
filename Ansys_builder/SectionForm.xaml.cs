@@ -231,6 +231,7 @@ namespace Ansys_builder
             setXmlValue();
             getXmlValue();
             drawSection(combo_select.SelectedIndex);
+            this.parentWin.section_id = combo_select.SelectedIndex;
             //this.parentWin.text_G1.Text = (26 * sectionArea * bridgeLength).ToString();
             //this.parentWin.combo_beam_section = combo_select.SelectedIndex;
             int conserve_length = 40;

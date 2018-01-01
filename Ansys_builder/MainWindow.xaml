@@ -91,7 +91,7 @@
             <ComboBoxItem Content="C45" />
             <ComboBoxItem Content="C50" />
         </ComboBox>
-        <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  x:Name="textBox_span_sep" Margin="68,0,0,138" HorizontalAlignment="Left" Width="230" Height="28" VerticalAlignment="Bottom">
+        <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  x:Name="textBox_span_sep" Margin="68,310,0,0" HorizontalAlignment="Left" Width="230" Height="28" VerticalAlignment="Top">
             <TextBox.Resources>
                 <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
                     <VisualBrush.Visual>
