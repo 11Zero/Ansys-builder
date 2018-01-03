@@ -91,7 +91,7 @@
             <ComboBoxItem Content="C45" />
             <ComboBoxItem Content="C50" />
         </ComboBox>
-        <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  x:Name="textBox_span_sep" Margin="68,310,0,0" HorizontalAlignment="Left" Width="230" Height="28" VerticalAlignment="Top">
+        <TextBox Foreground="Indigo" TabIndex="0" BorderThickness="1"  x:Name="text_span_step" Margin="68,310,0,0" HorizontalAlignment="Left" Width="230" Height="28" VerticalAlignment="Top">
             <TextBox.Resources>
                 <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
                     <VisualBrush.Visual>
@@ -113,5 +113,6 @@
             </TextBox.Style>
         </TextBox>
         <Button Content="输出模型文件" Height="36" HorizontalAlignment="Left" Margin="362,427,0,0" x:Name="btn_save" VerticalAlignment="Top" Width="124" Click="btn_save_Click" />
+        <Button x:Name="btn_draw_view" Content="视图刷新" HorizontalAlignment="Left" Margin="298,368,0,0" VerticalAlignment="Top" Width="75" Click="btn_draw_view_Click"/>
     </Grid>
 </Window>
