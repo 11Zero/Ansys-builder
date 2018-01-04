@@ -258,3 +258,81 @@
 2018-01-03 20:59:22,372 [ 8] INFO  Ansys_builder.MainWindow: mian start up
 2018-01-03 21:04:19,752 [ 8] INFO  CADCtrl.CADView: dll start up
 2018-01-03 21:04:19,886 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 09:56:59,416 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 09:56:59,523 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 09:58:56,644 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 09:58:56,733 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:03:15,071 [ 8] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:03:15,151 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:20:38,810 [ 8] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:20:38,948 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:21:22,143 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:21:22,227 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:22:38,505 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:22:38,603 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:29:05,615 [ 8] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:29:05,729 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:29:26,930 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:29:27,004 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:30:37,322 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:30:37,408 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:31:20,618 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:31:20,703 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:34:13,555 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:34:13,622 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:35:10,116 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:35:10,187 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:35:35,810 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:35:35,888 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:36:39,287 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:36:39,396 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 10:50:53,053 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 10:50:53,160 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:01:33,082 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:01:33,189 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:03:11,273 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:03:11,410 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:04:17,586 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:04:17,676 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:08:08,056 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:08:08,150 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:11:50,945 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:11:51,086 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:17:25,904 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:17:25,980 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:19:21,568 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:19:21,763 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:19:52,075 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:19:52,164 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:20:25,880 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:20:25,996 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:21:41,081 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:21:41,228 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 12:27:24,167 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 12:27:24,260 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:12:15,012 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:12:15,112 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:13:03,996 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:13:04,081 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:14:53,175 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:14:53,264 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:16:20,152 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:16:20,246 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:18:04,326 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:18:04,456 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:19:40,419 [ 8] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:19:40,541 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:27:38,842 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:27:38,925 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:29:18,863 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:29:18,970 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:33:45,910 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:33:46,121 [10] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:36:01,555 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:36:01,667 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:37:18,596 [ 9] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:37:18,693 [ 9] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:38:28,722 [ 8] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:38:28,851 [ 8] INFO  Ansys_builder.MainWindow: mian start up
+2018-01-04 13:39:40,219 [10] INFO  CADCtrl.CADView: dll start up
+2018-01-04 13:39:40,312 [10] INFO  Ansys_builder.MainWindow: mian start up
